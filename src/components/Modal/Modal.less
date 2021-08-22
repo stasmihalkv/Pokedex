@@ -1,0 +1,56 @@
+
+@import "../../styles/variables.less";
+
+.modal {
+    height: 100%;
+    width: 100%;
+    background-color: @clr-black-transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    width: 65vh;
+    background: @clr-white;
+    position: fixed;
+    z-index: 1000;
+    text-align: center;
+    position:relative;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.modalInput {
+    width: 80%;
+    line-height: 26px;
+    overflow: hidden;
+    margin: 50px 0 140px;
+}
+
+.modalButtons {
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.cancelButton {
+    border-color: @clr-gray-6;
+    background: @clr-white;
+    margin-right: 15px;
+    &:hover {
+        background-color: @clr-gray-6;
+        color: @clr-white;
+    }
+}
+
+.saveButton {
+    border-color: @clr-green-4;
+    background: @clr-white;
+    &:hover {
+        background-color: @clr-green-4;
+        color: @clr-white;
+    }
+}

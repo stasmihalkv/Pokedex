@@ -1,0 +1,53 @@
+@import "variables.less";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg,#000000f6,#0075fc); 
+}
+
+:global(#root) {
+  height: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: @font-weight-regular;
+}
+
+h2,
+h3 {
+  font-family: @SourceSansPro;
+}
+
+h2 {
+  font-size: @font-size-24;
+  line-height: 30px;
+}
+
+h3 {
+  font-size: @font-size-18;
+  line-height: 24px;
+}
+
+body {
+  min-width: 375px;
+}
+
+button {
+  cursor: pointer;
+  width: 70px;
+  line-height: 24px;
+  transition: all 0.3s ;
+  border: 2px solid;
+}

@@ -1,0 +1,73 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    },
+    "import/resolver": {
+      "webpack": {
+        "config": "config/webpack.dev.js"
+      },
+      "node": {
+        "extensions": [
+          ".ts",
+          ".tsx",
+          ".js"
+        ]
+      }
+    }
+  },
+  "plugins": [
+    "react",
+    "prettier",
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "prettier/@typescript-eslint",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "airbnb-base",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "legacyDecorators": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "rules": {
+    "no-console": "off",
+    "import/order": "off",
+    "global-require": "off",
+    "consistent-return": "off",
+    "react/display-name": "off",
+    "prettier/prettier": "error",
+    "no-underscore-dangle": "off",
+    "no-use-before-define": "off",
+    "class-methods-use-this": "off",
+    "newline-before-return": "error",
+    "import/no-dynamic-require": "off",
+    "prefer-promise-reject-errors": "off",
+    "import/prefer-default-export": "off",
+    "padding-line-between-statements": "error",
+    "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/explicit-function-return-type": "off"
+  }
+}

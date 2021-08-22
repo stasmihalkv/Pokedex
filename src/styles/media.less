@@ -1,0 +1,25 @@
+// 320 <= mobile < 768
+// 768 <= tablet < 1040
+// 1040 <= laptop < 1440
+// 1440 <= desktop < +∞
+
+@mobile-min-width: ~"(min-width: 320px)";
+@breakpoint-mobile: ~"(max-width: 767px)";
+@breakpoint-tablet: ~"(min-width: 768px)";
+@breakpoint-laptop: ~"(min-width: 1040px)";
+@breakpoint-desktop: ~"(min-width: 1440px)";
+
+// TODO: refactor and remove
+@tablet-max-width: ~"(max-width: 1040px)";
+
+/**
+ Usage. Add media query to your class:
+
+ .someClassName {
+   @media @breakpoint-tablet {
+    margin: 16px;
+   }
+  }
+
+  - means that it will be applied to tablet resolution and higher
+ */
