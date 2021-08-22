@@ -11,11 +11,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function init() {
 
-  fetch(`http://localhost:4000/pokemons`)
+ /* fetch(`http://localhost:4000/pokemons`)
   .then((res) => res.json())
   .then(res => {
     elementsStore.setPokemons(res)
-  })
+  })*/
 
   try {
     locationService.init();

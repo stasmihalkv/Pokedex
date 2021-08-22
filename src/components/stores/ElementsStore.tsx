@@ -1,8 +1,8 @@
 import { action, observable } from "mobx";
 import { locationService } from "../../services/LocationService";
-
+import data from "./db.json";
 export class ElementsStore {
-  @observable pokemons = [];
+  @observable pokemons = data.pokemons;
 
   @observable activePokemon: number;
 

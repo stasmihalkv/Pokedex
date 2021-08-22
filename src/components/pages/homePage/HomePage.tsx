@@ -5,7 +5,7 @@ import styles from "./homePage.less";
 // import { CaughPokemons } from "../CaughPokemonsList/CaughPokemonsList";
 import { PokemonCard } from "./PokemonCard/PokemonCard";
 import { Menu } from "../../Menu/Menu";
-import axios from 'axios';
+
 
 @observer
 export class HomePage extends React.Component {
